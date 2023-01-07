@@ -13,16 +13,16 @@
 let counterValue = 0;
 
 const counter = document.querySelector('#value');
-const buttonIncrement = document.querySelector('button[data-action="increment"]');
-const buttonDecrement = document.querySelector('button[data-action="decrement"]');
+const buttonIncrease = document.querySelector('button[data-action="increment"]');
+const buttonDecrease = document.querySelector('button[data-action="decrement"]');
 
-buttonIncrement.addEventListener('click', () => {
-    counterValue++;
+buttonIncrease.addEventListener('click', () => {
+    counterValue += 1;
     counter.textContent = counterValue;
 });
 
-buttonDecrement.addEventListener('click', () => {
-    counterValue--;
+buttonDecrease.addEventListener('click', () => {
+    counterValue -= 1;
     counter.textContent = counterValue;
 });
 

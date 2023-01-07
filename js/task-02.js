@@ -29,15 +29,15 @@ const ingredients = [
   'Condiments',
 ];
 
-const list = document.querySelector('#ingredients');
-const listArray = [];
+const ingredientsList = document.querySelector('#ingredients');
+const ingredientsArray = [];
 
 ingredients.forEach(ingredient => {
   const item = document.createElement('li');
   item.textContent = ingredient;
   item.className = 'item';
-  listArray.push(item);
+  ingredientsArray.push(item);
 }
 );
 
-list.append(...listArray);
+ingredientsList.append(...ingredientsArray);

@@ -22,15 +22,16 @@ const images = [
   },
 ];
 
-const picturesList = document.querySelector('.gallery');
-const markupText = images
+const imagesList = document.querySelector('.gallery');
+const imagesMarkup = images
   .map(image => `<li><img class='picture' src=${image.url} height = '270' alt='${image.alt}'></img></li>`)
   .join('');
 
-picturesList.insertAdjacentHTML('beforeend', markupText);
+imagesList.style.display = 'flex';
+imagesList.style.flexDirection = 'row';
+imagesList.style.listStyle = 'none';
+imagesList.style.gap = '30px';
 
-picturesList.style.display = 'flex';
-picturesList.style.flexDirection = 'row';
-picturesList.style.listStyle = 'none';
-picturesList.style.gap = '30px';
+imagesList.insertAdjacentHTML('beforeend', imagesMarkup);
+
 
