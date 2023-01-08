@@ -16,6 +16,7 @@
 // Elements: 5
 
 const categoriesItems = document.querySelectorAll('.item');
+
 console.log(`Number of categories: ${categoriesItems.length}`);
 
 categoriesItems.forEach(item => { 

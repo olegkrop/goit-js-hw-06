@@ -40,4 +40,7 @@ ingredients.forEach(ingredient => {
 }
 );
 
+console.log(ingredientsArray);
+console.log(...ingredientsArray);
+
 ingredientsList.append(...ingredientsArray);
